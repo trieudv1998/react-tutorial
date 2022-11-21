@@ -1,0 +1,25 @@
+.admin-layout {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #EDEDED;
+}
+
+.admin-layout .main-content {
+  flex: 1;
+  padding: 10px 50px;
+  overflow: auto;
+  position: relative;
+  transition: transform .3s cubic-bezier(.78,.14,.15,.86);
+  -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.admin-layout .trigger {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
