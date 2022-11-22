@@ -8,6 +8,7 @@ import HooksPage from "../hooks";
 import PageCustomHooks from "../hooks/custom-hooks";
 import PageUseCallBack from "../hooks/useCallback-hooks";
 import PageUseMemo from "../hooks/useMemo-hooks";
+import PageUseRef from "../hooks/useRef-hooks";
 import Products from "../products";
 import NotFound from "./not-found";
 import Sidebar from "./sidebar";
@@ -36,6 +37,7 @@ const RootPage = (props) => {
                         <Route path="/hooks/custom-hooks" element={<PageCustomHooks />} />
                         <Route path="/hooks/use-callback-hooks" element={<PageUseCallBack />} />
                         <Route path="/hooks/use-memo-hooks" element={<PageUseMemo />} />
+                        <Route path="/hooks/use-ref-hooks" element={<PageUseRef />} />
                         {/* end hooks */}
 
                         <Route path='*' element={<NotFound />} />

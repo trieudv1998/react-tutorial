@@ -4,6 +4,7 @@ const hooks = [
     { id: "Custom Hooks",name: "Custom Hooks", type: "custom-hooks" },
     { id: "Use Callback Hooks",name: "Use Callback Hooks", type: "use-callback-hooks" },
     { id: "Use Memo Hooks",name: "Use Memo Hooks", type: "use-memo-hooks" },
+    { id: "Use Ref Hooks",name: "Use Ref Hooks", type: "use-ref-hooks" },
 ]
 
 const HooksPage = (props) => {
