@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 const topic = [
     { id: "baitap1",name: "Bài tập 1", path: "/exercises/hooks/useRef/exercise1" },
+    { id: "baitap2",name: "Bài tập 2", path: "/exercises/hooks/useRef/exercise2" },
 ]
 const ExcercisesPage = (props) => {
     return (

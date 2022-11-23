@@ -5,6 +5,7 @@ import AddCourse from "../courses/addCourse";
 import CourseDetail from "../courses/courseDetail";
 import Dashboard from "../dashboard";
 import ExcercisesPage from "../exercises";
+import Exercise2WithUseRef from "../exercises/hooks/useRef/excercise2";
 import Exercise1WithUseRef from "../exercises/hooks/useRef/exercise1";
 import HooksPage from "../hooks";
 import PageCustomHooks from "../hooks/custom-hooks";
@@ -43,6 +44,7 @@ const RootPage = (props) => {
                         {/* start exercises */}
                         <Route path="/exercises" element={<ExcercisesPage />} />
                         <Route path="/exercises/hooks/useRef/exercise1" element={<Exercise1WithUseRef />} />
+                        <Route path="/exercises/hooks/useRef/exercise2" element={<Exercise2WithUseRef />} />
 
                         {/* end exercises */}
 
