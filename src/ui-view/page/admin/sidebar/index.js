@@ -20,9 +20,9 @@ const Sidebar = (props) => {
             <div className="pt-3">
                 <ul className="nav nav-pills flex-column">
                     <CustomLink to='/'>Dashboard</CustomLink>
-                    <CustomLink to='/products'>Products</CustomLink>
                     <CustomLink to='/courses'>Courses</CustomLink>
                     <CustomLink to='/hooks'>Hooks</CustomLink>
+                    <CustomLink to='/exercises'>Exercises</CustomLink>
                 </ul>
             </div>
         </>
