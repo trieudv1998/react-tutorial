@@ -12,6 +12,7 @@ import PageCustomHooks from "../hooks/custom-hooks";
 import PageUseCallBack from "../hooks/useCallback-hooks";
 import PageUseMemo from "../hooks/useMemo-hooks";
 import PageUseRef from "../hooks/useRef-hooks";
+import PageUseSearchParams from "../hooks/useSearchParams-hook";
 import NotFound from "./not-found";
 import Sidebar from "./sidebar";
 import "./styles.css";
@@ -39,6 +40,7 @@ const RootPage = (props) => {
                         <Route path="/hooks/use-callback-hooks" element={<PageUseCallBack />} />
                         <Route path="/hooks/use-memo-hooks" element={<PageUseMemo />} />
                         <Route path="/hooks/use-ref-hooks" element={<PageUseRef />} />
+                        <Route path="/hooks/use-searchparams-hooks" element={<PageUseSearchParams />} />
                         {/* end hooks */}
 
                         {/* start exercises */}

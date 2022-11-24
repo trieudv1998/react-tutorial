@@ -21,7 +21,7 @@ const Exercise2WithUseRef = (props) => {
     const onsubmit = () => {
         if (isValidData()) {
             setTextError('');
-            console.log({ "value": text });
+            console.log( "value", text );
         }
     }
 
@@ -33,19 +33,19 @@ const Exercise2WithUseRef = (props) => {
     //     }
     // }
 
-    (function () {
-        if (!console) {
-            console = {};
-        }
-        var logger = document.getElementById('myLog');
-        console.log = function (message) {
-            if (typeof message == 'object') {
-                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
-            } else {
-                logger.innerHTML += message + '<br />';
-            }
-        }
-    })();
+    // (function () {
+    //     if (!console) {
+    //         console = {};
+    //     }
+    //     var logger = document.getElementById('myLog');
+    //     console.log = function (message) {
+    //         if (typeof message == 'object') {
+    //             logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
+    //         } else {
+    //             logger.innerHTML += message + '<br />';
+    //         }
+    //     }
+    // })();
 
     return (
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
