@@ -12,17 +12,24 @@ const Exercise1WithUseRef = (props) => {
     const increaseNumberInChild = () => {
         childRef.current.incrseaseNumber();
     };
+
     return (
-        <div className="App">
-            <Children ref={childRef} />
-            <button onClick={showTextInChild}>
-                Show Text in Child compoent
-            </button>
-            <p></p>
-            <button onClick={increaseNumberInChild}>
-                Increase number in Child compoent
-            </button>
-        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
+                <Children ref={childRef} />
+                <button onClick={() => showTextInChild()}>
+                    Show Text in Child compoent
+                </button>
+                <p></p>
+                <button onClick={increaseNumberInChild}>
+                    Increase number in Child compoent
+                </button>
+            </div>
+            {/* show my log */}
+            <div style={{ flex: 1, backgroundColor: '#fff', width: "100%", height: '100vh', overflow: 'scroll', padding: '10px' }}>
+            </div>
+        </div >
     )
 }
 export default Exercise1WithUseRef
