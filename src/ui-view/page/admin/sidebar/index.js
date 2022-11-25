@@ -63,6 +63,7 @@ const Sidebar = (props) => {
                             if (value.type === 'item') {
                                 return (
                                     <MenuItem
+                                        key={index}
                                         name={value.name}
                                         path={value.path}
                                     />
@@ -73,12 +74,14 @@ const Sidebar = (props) => {
                                     <SubMenuUI
                                         name={value.name}
                                         path={value.path}
+                                        key={index}
                                     >
                                         {
                                             // render 1 level only
                                             value.groups.map((sValue, sIndex) => {
                                                 return (
                                                     <MenuItem
+                                                        key={`${index + '_' + sIndex}`}
                                                         name={sValue.name}
                                                         path={sValue.path}
                                                     />
