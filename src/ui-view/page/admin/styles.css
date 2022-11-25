@@ -5,6 +5,7 @@
   right: 0px;
   bottom: 0px;
   background: #EDEDED;
+  display: flex;
 }
 
 .admin-layout .main-content {
