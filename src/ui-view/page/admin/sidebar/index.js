@@ -22,7 +22,11 @@ const Sidebar = (props) => {
         },
         { key: "exercises", name: "Exercises", path: "/exercises", type: "item" },
         { key: "lazyloading", name: "Lazy Loading", path: "/lazy-loading", type: "item" },
-
+        {
+            key: "animation", name: "Animation", path: "/animation", type: "group", groups: [
+                { key: "fly", name: "Fly", path: "/animation/fly" },
+            ]
+        },
     ];
 
     const MenuUI = ({ children, ...props }) => {
