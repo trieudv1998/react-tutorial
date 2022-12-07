@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { getUserInfo } from "../../../helper";
+import FlyToCart from "../animation/fly";
 import Courses from "../courses";
 import AddCourse from "../courses/addCourse";
 import CourseDetail from "../courses/courseDetail";
@@ -73,6 +74,10 @@ const RootPage = (props) => {
                         <Route path="/lazy-loading" element={<React.Suspense fallback={<div>Loading...</div>}>
                             <LazyLoading />
                         </React.Suspense>} />
+
+                        <Route path="/animation" element={<FlyToCart />} />
+                        <Route path="/animation/fly" element={<FlyToCart />} />
+
                     </Route>
 
                     <Route path='*' element={<NotFound />} />
