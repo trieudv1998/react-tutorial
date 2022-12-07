@@ -18,6 +18,7 @@ const Sidebar = (props) => {
                 { key: "usememo", name: "Use Memo", path: "/hooks/use-memo-hooks" },
                 { key: "useref", name: "Use Ref", path: "/hooks/use-ref-hooks" },
                 { key: "useSearchParams", name: "useSearchParams", path: "/hooks/use-searchparams-hooks" },
+                { key: "useReduces", name: "useReduces", path: "/hooks/useReduces-hooks" },
             ]
         },
         { key: "exercises", name: "Exercises", path: "/exercises", type: "item" },

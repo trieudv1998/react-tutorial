@@ -12,7 +12,9 @@ import Exercise1WithUseRef from "../exercises/hooks/useRef/exercise1";
 import HooksPage from "../hooks";
 import PageCustomHooks from "../hooks/custom-hooks";
 import PageUseCallBack from "../hooks/useCallback-hooks";
+import PageUseContext from "../hooks/useContext-hooks";
 import PageUseMemo from "../hooks/useMemo-hooks";
+import Form from "../hooks/useReduces-hooks";
 import PageUseRef from "../hooks/useRef-hooks";
 import PageUseSearchParams from "../hooks/useSearchParams-hook";
 import LazyLoadingPage from "../lazy-loading";
@@ -59,6 +61,8 @@ const RootPage = (props) => {
                         <Route path="/hooks/use-memo-hooks" element={<PageUseMemo />} />
                         <Route path="/hooks/use-ref-hooks" element={<PageUseRef />} />
                         <Route path="/hooks/use-searchparams-hooks" element={<PageUseSearchParams />} />
+                        <Route path="/hooks/useContext-hook" element={<PageUseContext />} />    
+                        <Route path="/hooks/useReduces-hooks" element={<Form />} />
                         {/* end hooks */}
 
                         {/* start exercises */}
